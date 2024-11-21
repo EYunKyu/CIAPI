@@ -1,0 +1,2128 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class eGrabberEx
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class eGrabberEx
+   ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Core.HardWare.eGrabberEx">
+  
+  
+  <h1 id="Core_HardWare_eGrabberEx" data-uid="Core.HardWare.eGrabberEx" class="text-break">Class eGrabberEx
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Euresys.EGrabberCallbackSingleThread</span></div>
+    <div class="level2"><span class="xref">eGrabberEx</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.grabber</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.onScriptUiCallback</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.onNewBufferEvent</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.onIoToolboxEvent</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.onCicEvent</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.onDataStreamEvent</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.onCxpInterfaceEvent</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.onDeviceErrorEvent</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.onCxpDeviceEvent</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.onRemoteDeviceEvent</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.reallocBuffers(Euresys.SizeT)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.reallocBuffers(Euresys.SizeT, Euresys.SizeT)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.announceAndQueue(Euresys.NvidiaRdmaMemory)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.announceAndQueue(Euresys.BusMemory)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.announceAndQueue(Euresys.UserMemoryArray, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.announceAndQueue(Euresys.UserMemoryArray)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.announceAndQueue(Euresys.UserMemory)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.announceAndQueue(Euresys.GenTLMemory)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.announceAndQueue(Euresys.GenTLMemory, Euresys.SizeT)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.flushBuffers()</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.flushBuffers(Euresys.gc.ACQ_QUEUE_TYPE)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.resetBufferQueue(Euresys.BufferIndexRange)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.resetBufferQueue()</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.queue(Euresys.BufferIndexRange)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.revoke(Euresys.BufferIndexRange)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.shouldReannounceBuffers()</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.shouldReallocBuffers()</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.start()</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.start(System.UInt64)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.start(System.UInt64, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.stop()</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.getWidth()</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.getHeight()</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.getPayloadSize()</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.getPixelFormat()</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.getInfoDeviceModule(Euresys.gc.DEVICE_INFO_CMD, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.getInfoDeviceModule(Euresys.gc.DEVICE_INFO_CMD, Euresys.PtrDiffT)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.getInfoDeviceModule(Euresys.gc.DEVICE_INFO_CMD, Euresys.SizeT)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.getInfoDeviceModule(Euresys.gc.DEVICE_INFO_CMD, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.getInfoDeviceModule(Euresys.gc.DEVICE_INFO_CMD, System.IntPtr)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.getInfoDeviceModule(Euresys.gc.DEVICE_INFO_CMD, System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.getInfoDeviceModule(Euresys.gc.DEVICE_INFO_CMD, System.UInt64)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.getInfoDeviceModule(Euresys.gc.DEVICE_INFO_CMD, System.Int64)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.getInfoDeviceModule(Euresys.gc.DEVICE_INFO_CMD, System.UInt32)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.getInfoDeviceModule(Euresys.gc.DEVICE_INFO_CMD, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.getInfoDeviceModule(Euresys.gc.DEVICE_INFO_CMD, System.UInt16)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.getInfoDeviceModule(Euresys.gc.DEVICE_INFO_CMD, System.Int16)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.getInfoInterfaceModule(Euresys.gc.INTERFACE_INFO_CMD, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.getInfoInterfaceModule(Euresys.gc.INTERFACE_INFO_CMD, Euresys.PtrDiffT)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.getInfoInterfaceModule(Euresys.gc.INTERFACE_INFO_CMD, Euresys.SizeT)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.getInfoInterfaceModule(Euresys.gc.INTERFACE_INFO_CMD, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.getInfoInterfaceModule(Euresys.gc.INTERFACE_INFO_CMD, System.IntPtr)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.getInfoInterfaceModule(Euresys.gc.INTERFACE_INFO_CMD, System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.getInfoInterfaceModule(Euresys.gc.INTERFACE_INFO_CMD, System.UInt64)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.getInfoInterfaceModule(Euresys.gc.INTERFACE_INFO_CMD, System.Int64)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.getInfoInterfaceModule(Euresys.gc.INTERFACE_INFO_CMD, System.UInt32)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.getInfoInterfaceModule(Euresys.gc.INTERFACE_INFO_CMD, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.getInfoInterfaceModule(Euresys.gc.INTERFACE_INFO_CMD, System.UInt16)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.getInfoInterfaceModule(Euresys.gc.INTERFACE_INFO_CMD, System.Int16)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.getInfoStreamModule(Euresys.gc.STREAM_INFO_CMD, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.getInfoStreamModule(Euresys.gc.STREAM_INFO_CMD, Euresys.PtrDiffT)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.getInfoStreamModule(Euresys.gc.STREAM_INFO_CMD, Euresys.SizeT)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.getInfoStreamModule(Euresys.gc.STREAM_INFO_CMD, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.getInfoStreamModule(Euresys.gc.STREAM_INFO_CMD, System.IntPtr)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.getInfoStreamModule(Euresys.gc.STREAM_INFO_CMD, System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.getInfoStreamModule(Euresys.gc.STREAM_INFO_CMD, System.UInt64)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.getInfoStreamModule(Euresys.gc.STREAM_INFO_CMD, System.Int64)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.getInfoStreamModule(Euresys.gc.STREAM_INFO_CMD, System.UInt32)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.getInfoStreamModule(Euresys.gc.STREAM_INFO_CMD, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.getInfoStreamModule(Euresys.gc.STREAM_INFO_CMD, System.UInt16)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.getInfoStreamModule(Euresys.gc.STREAM_INFO_CMD, System.Int16)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.getInfoSystemModule(Euresys.gc.TL_INFO_CMD, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.getInfoSystemModule(Euresys.gc.TL_INFO_CMD, Euresys.PtrDiffT)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.getInfoSystemModule(Euresys.gc.TL_INFO_CMD, Euresys.SizeT)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.getInfoSystemModule(Euresys.gc.TL_INFO_CMD, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.getInfoSystemModule(Euresys.gc.TL_INFO_CMD, System.IntPtr)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.getInfoSystemModule(Euresys.gc.TL_INFO_CMD, System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.getInfoSystemModule(Euresys.gc.TL_INFO_CMD, System.UInt64)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.getInfoSystemModule(Euresys.gc.TL_INFO_CMD, System.Int64)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.getInfoSystemModule(Euresys.gc.TL_INFO_CMD, System.UInt32)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.getInfoSystemModule(Euresys.gc.TL_INFO_CMD, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.getInfoSystemModule(Euresys.gc.TL_INFO_CMD, System.UInt16)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.getInfoSystemModule(Euresys.gc.TL_INFO_CMD, System.Int16)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.getBufferInfo(Euresys.SizeT, Euresys.gc.BUFFER_INFO_CMD, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.getBufferInfo(Euresys.SizeT, Euresys.gc.BUFFER_INFO_CMD, Euresys.PtrDiffT)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.getBufferInfo(Euresys.SizeT, Euresys.gc.BUFFER_INFO_CMD, Euresys.SizeT)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.getBufferInfo(Euresys.SizeT, Euresys.gc.BUFFER_INFO_CMD, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.getBufferInfo(Euresys.SizeT, Euresys.gc.BUFFER_INFO_CMD, System.IntPtr)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.getBufferInfo(Euresys.SizeT, Euresys.gc.BUFFER_INFO_CMD, System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.getBufferInfo(Euresys.SizeT, Euresys.gc.BUFFER_INFO_CMD, System.UInt64)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.getBufferInfo(Euresys.SizeT, Euresys.gc.BUFFER_INFO_CMD, System.Int64)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.getBufferInfo(Euresys.SizeT, Euresys.gc.BUFFER_INFO_CMD, System.UInt32)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.getBufferInfo(Euresys.SizeT, Euresys.gc.BUFFER_INFO_CMD, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.getBufferInfo(Euresys.SizeT, Euresys.gc.BUFFER_INFO_CMD, System.UInt16)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.getBufferInfo(Euresys.SizeT, Euresys.gc.BUFFER_INFO_CMD, System.Int16)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.getBufferData(Euresys.SizeT)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.isOpenDeviceModule()</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.isOpenInterfaceModule()</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.isOpenRemoteModule()</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.isOpenStreamModule()</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.isOpenSystemModule()</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcReadPortDataDeviceModule(System.UInt64, System.IntPtr, Euresys.SizeT)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcReadPortDataInterfaceModule(System.UInt64, System.IntPtr, Euresys.SizeT)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcReadPortDataRemoteModule(System.UInt64, System.IntPtr, Euresys.SizeT)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcReadPortDataStreamModule(System.UInt64, System.IntPtr, Euresys.SizeT)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcReadPortDataSystemModule(System.UInt64, System.IntPtr, Euresys.SizeT)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcWritePortDataDeviceModule(System.UInt64, System.IntPtr, Euresys.SizeT)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcWritePortDataInterfaceModule(System.UInt64, System.IntPtr, Euresys.SizeT)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcWritePortDataRemoteModule(System.UInt64, System.IntPtr, Euresys.SizeT)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcWritePortDataStreamModule(System.UInt64, System.IntPtr, Euresys.SizeT)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcWritePortDataSystemModule(System.UInt64, System.IntPtr, Euresys.SizeT)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcReadPortDeviceModule(System.UInt64, Euresys.SizeT)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcReadPortInterfaceModule(System.UInt64, Euresys.SizeT)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcReadPortRemoteModule(System.UInt64, Euresys.SizeT)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcReadPortStreamModule(System.UInt64, Euresys.SizeT)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcReadPortSystemModule(System.UInt64, Euresys.SizeT)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcWritePortDeviceModule(System.UInt64, System.Byte[])</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcWritePortInterfaceModule(System.UInt64, System.Byte[])</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcWritePortRemoteModule(System.UInt64, System.Byte[])</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcWritePortStreamModule(System.UInt64, System.Byte[])</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcWritePortSystemModule(System.UInt64, System.Byte[])</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcReadPortValueDeviceModule(System.UInt64, System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcReadPortValueDeviceModule(System.UInt64, System.Single)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcReadPortValueDeviceModule(System.UInt64, System.UInt64)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcReadPortValueDeviceModule(System.UInt64, System.Int64)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcReadPortValueDeviceModule(System.UInt64, System.UInt32)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcReadPortValueDeviceModule(System.UInt64, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcReadPortValueDeviceModule(System.UInt64, System.UInt16)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcReadPortValueDeviceModule(System.UInt64, System.Int16)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcReadPortValueDeviceModule(System.UInt64, System.Byte)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcReadPortValueDeviceModule(System.UInt64, System.SByte)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcReadPortValueInterfaceModule(System.UInt64, System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcReadPortValueInterfaceModule(System.UInt64, System.Single)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcReadPortValueInterfaceModule(System.UInt64, System.UInt64)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcReadPortValueInterfaceModule(System.UInt64, System.Int64)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcReadPortValueInterfaceModule(System.UInt64, System.UInt32)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcReadPortValueInterfaceModule(System.UInt64, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcReadPortValueInterfaceModule(System.UInt64, System.UInt16)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcReadPortValueInterfaceModule(System.UInt64, System.Int16)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcReadPortValueInterfaceModule(System.UInt64, System.Byte)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcReadPortValueInterfaceModule(System.UInt64, System.SByte)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcReadPortValueRemoteModule(System.UInt64, System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcReadPortValueRemoteModule(System.UInt64, System.Single)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcReadPortValueRemoteModule(System.UInt64, System.UInt64)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcReadPortValueRemoteModule(System.UInt64, System.Int64)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcReadPortValueRemoteModule(System.UInt64, System.UInt32)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcReadPortValueRemoteModule(System.UInt64, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcReadPortValueRemoteModule(System.UInt64, System.UInt16)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcReadPortValueRemoteModule(System.UInt64, System.Int16)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcReadPortValueRemoteModule(System.UInt64, System.Byte)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcReadPortValueRemoteModule(System.UInt64, System.SByte)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcReadPortValueStreamModule(System.UInt64, System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcReadPortValueStreamModule(System.UInt64, System.Single)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcReadPortValueStreamModule(System.UInt64, System.UInt64)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcReadPortValueStreamModule(System.UInt64, System.Int64)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcReadPortValueStreamModule(System.UInt64, System.UInt32)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcReadPortValueStreamModule(System.UInt64, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcReadPortValueStreamModule(System.UInt64, System.UInt16)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcReadPortValueStreamModule(System.UInt64, System.Int16)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcReadPortValueStreamModule(System.UInt64, System.Byte)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcReadPortValueStreamModule(System.UInt64, System.SByte)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcReadPortValueSystemModule(System.UInt64, System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcReadPortValueSystemModule(System.UInt64, System.Single)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcReadPortValueSystemModule(System.UInt64, System.UInt64)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcReadPortValueSystemModule(System.UInt64, System.Int64)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcReadPortValueSystemModule(System.UInt64, System.UInt32)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcReadPortValueSystemModule(System.UInt64, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcReadPortValueSystemModule(System.UInt64, System.UInt16)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcReadPortValueSystemModule(System.UInt64, System.Int16)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcReadPortValueSystemModule(System.UInt64, System.Byte)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcReadPortValueSystemModule(System.UInt64, System.SByte)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcWritePortValueDeviceModule(System.UInt64, System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcWritePortValueDeviceModule(System.UInt64, System.Single)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcWritePortValueDeviceModule(System.UInt64, System.UInt64)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcWritePortValueDeviceModule(System.UInt64, System.Int64)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcWritePortValueDeviceModule(System.UInt64, System.UInt32)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcWritePortValueDeviceModule(System.UInt64, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcWritePortValueDeviceModule(System.UInt64, System.UInt16)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcWritePortValueDeviceModule(System.UInt64, System.Int16)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcWritePortValueDeviceModule(System.UInt64, System.Byte)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcWritePortValueDeviceModule(System.UInt64, System.SByte)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcWritePortValueInterfaceModule(System.UInt64, System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcWritePortValueInterfaceModule(System.UInt64, System.Single)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcWritePortValueInterfaceModule(System.UInt64, System.UInt64)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcWritePortValueInterfaceModule(System.UInt64, System.Int64)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcWritePortValueInterfaceModule(System.UInt64, System.UInt32)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcWritePortValueInterfaceModule(System.UInt64, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcWritePortValueInterfaceModule(System.UInt64, System.UInt16)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcWritePortValueInterfaceModule(System.UInt64, System.Int16)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcWritePortValueInterfaceModule(System.UInt64, System.Byte)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcWritePortValueInterfaceModule(System.UInt64, System.SByte)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcWritePortValueRemoteModule(System.UInt64, System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcWritePortValueRemoteModule(System.UInt64, System.Single)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcWritePortValueRemoteModule(System.UInt64, System.UInt64)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcWritePortValueRemoteModule(System.UInt64, System.Int64)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcWritePortValueRemoteModule(System.UInt64, System.UInt32)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcWritePortValueRemoteModule(System.UInt64, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcWritePortValueRemoteModule(System.UInt64, System.UInt16)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcWritePortValueRemoteModule(System.UInt64, System.Int16)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcWritePortValueRemoteModule(System.UInt64, System.Byte)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcWritePortValueRemoteModule(System.UInt64, System.SByte)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcWritePortValueStreamModule(System.UInt64, System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcWritePortValueStreamModule(System.UInt64, System.Single)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcWritePortValueStreamModule(System.UInt64, System.UInt64)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcWritePortValueStreamModule(System.UInt64, System.Int64)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcWritePortValueStreamModule(System.UInt64, System.UInt32)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcWritePortValueStreamModule(System.UInt64, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcWritePortValueStreamModule(System.UInt64, System.UInt16)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcWritePortValueStreamModule(System.UInt64, System.Int16)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcWritePortValueStreamModule(System.UInt64, System.Byte)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcWritePortValueStreamModule(System.UInt64, System.SByte)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcWritePortValueSystemModule(System.UInt64, System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcWritePortValueSystemModule(System.UInt64, System.Single)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcWritePortValueSystemModule(System.UInt64, System.UInt64)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcWritePortValueSystemModule(System.UInt64, System.Int64)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcWritePortValueSystemModule(System.UInt64, System.UInt32)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcWritePortValueSystemModule(System.UInt64, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcWritePortValueSystemModule(System.UInt64, System.UInt16)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcWritePortValueSystemModule(System.UInt64, System.Int16)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcWritePortValueSystemModule(System.UInt64, System.Byte)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcWritePortValueSystemModule(System.UInt64, System.SByte)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcReadPortStringDeviceModule(System.UInt64, Euresys.SizeT)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcReadPortStringInterfaceModule(System.UInt64, Euresys.SizeT)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcReadPortStringRemoteModule(System.UInt64, Euresys.SizeT)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcReadPortStringStreamModule(System.UInt64, Euresys.SizeT)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.gcReadPortStringSystemModule(System.UInt64, Euresys.SizeT)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.getIntegerDeviceModule(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.getIntegerInterfaceModule(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.getIntegerRemoteModule(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.getIntegerStreamModule(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.getIntegerSystemModule(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.getFloatDeviceModule(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.getFloatInterfaceModule(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.getFloatRemoteModule(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.getFloatStreamModule(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.getFloatSystemModule(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.getStringDeviceModule(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.getStringInterfaceModule(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.getStringRemoteModule(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.getStringStreamModule(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.getStringSystemModule(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.getStringDataDeviceModule(System.String, System.Byte[])</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.getStringDataInterfaceModule(System.String, System.Byte[])</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.getStringDataRemoteModule(System.String, System.Byte[])</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.getStringDataStreamModule(System.String, System.Byte[])</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.getStringDataSystemModule(System.String, System.Byte[])</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.getStringListDeviceModule(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.getStringListInterfaceModule(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.getStringListRemoteModule(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.getStringListStreamModule(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.getStringListSystemModule(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.getRegisterDeviceModule(System.String, System.IntPtr, Euresys.SizeT)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.getRegisterInterfaceModule(System.String, System.IntPtr, Euresys.SizeT)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.getRegisterRemoteModule(System.String, System.IntPtr, Euresys.SizeT)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.getRegisterStreamModule(System.String, System.IntPtr, Euresys.SizeT)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.getRegisterSystemModule(System.String, System.IntPtr, Euresys.SizeT)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.setIntegerDeviceModule(System.String, System.Int64)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.setIntegerInterfaceModule(System.String, System.Int64)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.setIntegerRemoteModule(System.String, System.Int64)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.setIntegerStreamModule(System.String, System.Int64)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.setIntegerSystemModule(System.String, System.Int64)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.setFloatDeviceModule(System.String, System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.setFloatInterfaceModule(System.String, System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.setFloatRemoteModule(System.String, System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.setFloatStreamModule(System.String, System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.setFloatSystemModule(System.String, System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.setStringDeviceModule(System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.setStringInterfaceModule(System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.setStringRemoteModule(System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.setStringStreamModule(System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.setStringSystemModule(System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.setRegisterDeviceModule(System.String, System.IntPtr, Euresys.SizeT)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.setRegisterInterfaceModule(System.String, System.IntPtr, Euresys.SizeT)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.setRegisterRemoteModule(System.String, System.IntPtr, Euresys.SizeT)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.setRegisterStreamModule(System.String, System.IntPtr, Euresys.SizeT)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.setRegisterSystemModule(System.String, System.IntPtr, Euresys.SizeT)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.executeDeviceModule(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.executeInterfaceModule(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.executeRemoteModule(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.executeStreamModule(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.executeSystemModule(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.attachEventDeviceModule(System.UInt64, System.IntPtr, Euresys.SizeT)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.attachEventInterfaceModule(System.UInt64, System.IntPtr, Euresys.SizeT)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.attachEventRemoteModule(System.UInt64, System.IntPtr, Euresys.SizeT)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.attachEventStreamModule(System.UInt64, System.IntPtr, Euresys.SizeT)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.attachEventSystemModule(System.UInt64, System.IntPtr, Euresys.SizeT)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.invalidateDeviceModule(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.invalidateInterfaceModule(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.invalidateRemoteModule(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.invalidateStreamModule(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.invalidateSystemModule(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.runScript(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.runScript(System.String, System.IntPtr)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.interruptScript(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.memento(System.Byte, System.Byte, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.memento(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.mementoWaveUp(System.Byte, System.Byte)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.mementoWaveDown(System.Byte, System.Byte)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.mementoWaveReset(System.Byte, System.Byte)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.mementoWaveValue(System.Byte, System.Byte, System.UInt64)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.mementoWaveNoValue(System.Byte, System.Byte)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.enableCicDataEvent()</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.enableCxpDeviceDataEvent()</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.enableCxpInterfaceDataEvent()</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.enableDataStreamDataEvent()</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.enableDeviceErrorDataEvent()</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.enableIoToolboxDataEvent()</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.enableNewBufferDataEvent()</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.enableRemoteDeviceDataEvent()</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.enableAllEvent()</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.disableCicDataEvent()</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.disableCxpDeviceDataEvent()</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.disableCxpInterfaceDataEvent()</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.disableDataStreamDataEvent()</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.disableDeviceErrorDataEvent()</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.disableIoToolboxDataEvent()</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.disableNewBufferDataEvent()</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.disableRemoteDeviceDataEvent()</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.disableAllEvent()</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.flushCicDataEvent()</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.flushCxpDeviceDataEvent()</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.flushCxpInterfaceDataEvent()</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.flushDataStreamDataEvent()</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.flushDeviceErrorDataEvent()</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.flushIoToolboxDataEvent()</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.flushNewBufferDataEvent()</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.flushRemoteDeviceDataEvent()</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.flushAllEvent()</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.getLastEventGrabberIndex()</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.shutdown()</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.push(Euresys.NewBufferData)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.announceBusBuffer(System.UInt64, Euresys.SizeT)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.announceBusBuffer(System.UInt64, Euresys.SizeT, System.IntPtr)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.announceNvidiaRdmaBuffer(System.IntPtr, Euresys.SizeT)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.announceNvidiaRdmaBuffer(System.IntPtr, Euresys.SizeT, System.IntPtr)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.cleanupEventDelegates()</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.Dispose(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">Euresys.EGrabberCallbackSingleThread.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Core.HardWare.html">Core.HardWare</a></h6>
+  <h6><strong>Assembly</strong>: ConnectedInsightCore.dll</h6>
+  <h5 id="Core_HardWare_eGrabberEx_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class eGrabberEx : EGrabberCallbackSingleThread, IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Core_HardWare_eGrabberEx__ctor_" data-uid="Core.HardWare.eGrabberEx.#ctor*"></a>
+  <h4 id="Core_HardWare_eGrabberEx__ctor_System_Int32_System_Int32_System_Int32_" data-uid="Core.HardWare.eGrabberEx.#ctor(System.Int32,System.Int32,System.Int32)">eGrabberEx(Int32, Int32, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public eGrabberEx(int InterfaceIndex, int DeviceIndex, int StreamIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">InterfaceIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">DeviceIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">StreamIndex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="Core_HardWare_eGrabberEx_Camera" data-uid="Core.HardWare.eGrabberEx.Camera">Camera</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CCamera Camera</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Core.HardWare.CCamera.html">CCamera</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Core_HardWare_eGrabberEx_m_nCamNumber" data-uid="Core.HardWare.eGrabberEx.m_nCamNumber">m_nCamNumber</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int m_nCamNumber</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Core_HardWare_eGrabberEx_Buffer_" data-uid="Core.HardWare.eGrabberEx.Buffer*"></a>
+  <h4 id="Core_HardWare_eGrabberEx_Buffer" data-uid="Core.HardWare.eGrabberEx.Buffer">Buffer</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte[] Buffer { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Core_HardWare_eGrabberEx_BufferSize_" data-uid="Core.HardWare.eGrabberEx.BufferSize*"></a>
+  <h4 id="Core_HardWare_eGrabberEx_BufferSize" data-uid="Core.HardWare.eGrabberEx.BufferSize">BufferSize</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int BufferSize { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Core_HardWare_eGrabberEx_ColorBuffer_" data-uid="Core.HardWare.eGrabberEx.ColorBuffer*"></a>
+  <h4 id="Core_HardWare_eGrabberEx_ColorBuffer" data-uid="Core.HardWare.eGrabberEx.ColorBuffer">ColorBuffer</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte[] ColorBuffer { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Core_HardWare_eGrabberEx_DeviceModelName_" data-uid="Core.HardWare.eGrabberEx.DeviceModelName*"></a>
+  <h4 id="Core_HardWare_eGrabberEx_DeviceModelName" data-uid="Core.HardWare.eGrabberEx.DeviceModelName">DeviceModelName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string DeviceModelName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Core_HardWare_eGrabberEx_DeviceSerialNumber_" data-uid="Core.HardWare.eGrabberEx.DeviceSerialNumber*"></a>
+  <h4 id="Core_HardWare_eGrabberEx_DeviceSerialNumber" data-uid="Core.HardWare.eGrabberEx.DeviceSerialNumber">DeviceSerialNumber</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string DeviceSerialNumber { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Core_HardWare_eGrabberEx_GrabDone_" data-uid="Core.HardWare.eGrabberEx.GrabDone*"></a>
+  <h4 id="Core_HardWare_eGrabberEx_GrabDone" data-uid="Core.HardWare.eGrabberEx.GrabDone">GrabDone</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EventWaitHandle GrabDone { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.EventWaitHandle</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Core_HardWare_eGrabberEx_Height_" data-uid="Core.HardWare.eGrabberEx.Height*"></a>
+  <h4 id="Core_HardWare_eGrabberEx_Height" data-uid="Core.HardWare.eGrabberEx.Height">Height</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SizeT Height { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Euresys.SizeT</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Core_HardWare_eGrabberEx_IsActived_" data-uid="Core.HardWare.eGrabberEx.IsActived*"></a>
+  <h4 id="Core_HardWare_eGrabberEx_IsActived" data-uid="Core.HardWare.eGrabberEx.IsActived">IsActived</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsActived { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Core_HardWare_eGrabberEx_IsLost_" data-uid="Core.HardWare.eGrabberEx.IsLost*"></a>
+  <h4 id="Core_HardWare_eGrabberEx_IsLost" data-uid="Core.HardWare.eGrabberEx.IsLost">IsLost</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsLost { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Core_HardWare_eGrabberEx_IsOpened_" data-uid="Core.HardWare.eGrabberEx.IsOpened*"></a>
+  <h4 id="Core_HardWare_eGrabberEx_IsOpened" data-uid="Core.HardWare.eGrabberEx.IsOpened">IsOpened</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsOpened { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Core_HardWare_eGrabberEx_IsReady_" data-uid="Core.HardWare.eGrabberEx.IsReady*"></a>
+  <h4 id="Core_HardWare_eGrabberEx_IsReady" data-uid="Core.HardWare.eGrabberEx.IsReady">IsReady</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsReady { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Core_HardWare_eGrabberEx_PayloadSize_" data-uid="Core.HardWare.eGrabberEx.PayloadSize*"></a>
+  <h4 id="Core_HardWare_eGrabberEx_PayloadSize" data-uid="Core.HardWare.eGrabberEx.PayloadSize">PayloadSize</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SizeT PayloadSize { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Euresys.SizeT</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Core_HardWare_eGrabberEx_PixelFormat_" data-uid="Core.HardWare.eGrabberEx.PixelFormat*"></a>
+  <h4 id="Core_HardWare_eGrabberEx_PixelFormat" data-uid="Core.HardWare.eGrabberEx.PixelFormat">PixelFormat</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string PixelFormat { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Core_HardWare_eGrabberEx_Width_" data-uid="Core.HardWare.eGrabberEx.Width*"></a>
+  <h4 id="Core_HardWare_eGrabberEx_Width" data-uid="Core.HardWare.eGrabberEx.Width">Width</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SizeT Width { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Euresys.SizeT</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Core_HardWare_eGrabberEx_AllocateBuffer_" data-uid="Core.HardWare.eGrabberEx.AllocateBuffer*"></a>
+  <h4 id="Core_HardWare_eGrabberEx_AllocateBuffer_System_UInt64_" data-uid="Core.HardWare.eGrabberEx.AllocateBuffer(System.UInt64)">AllocateBuffer(UInt64)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AllocateBuffer(ulong grabCount = 18446744073709551615UL)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">grabCount</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Core_HardWare_eGrabberEx_Finalize_" data-uid="Core.HardWare.eGrabberEx.Finalize*"></a>
+  <h4 id="Core_HardWare_eGrabberEx_Finalize" data-uid="Core.HardWare.eGrabberEx.Finalize">Finalize()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void Finalize()</code></pre>
+  </div>
+  
+  
+  <a id="Core_HardWare_eGrabberEx_GetValueDouble_" data-uid="Core.HardWare.eGrabberEx.GetValueDouble*"></a>
+  <h4 id="Core_HardWare_eGrabberEx_GetValueDouble_Core_HardWare_eGrabberEx_Module_System_String_" data-uid="Core.HardWare.eGrabberEx.GetValueDouble(Core.HardWare.eGrabberEx.Module,System.String)">GetValueDouble(eGrabberEx.Module, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double GetValueDouble(eGrabberEx.Module module, string node)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Core.HardWare.eGrabberEx.Module.html">eGrabberEx.Module</a></td>
+        <td><span class="parametername">module</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">node</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Core_HardWare_eGrabberEx_GetValueInteger_" data-uid="Core.HardWare.eGrabberEx.GetValueInteger*"></a>
+  <h4 id="Core_HardWare_eGrabberEx_GetValueInteger_Core_HardWare_eGrabberEx_Module_System_String_" data-uid="Core.HardWare.eGrabberEx.GetValueInteger(Core.HardWare.eGrabberEx.Module,System.String)">GetValueInteger(eGrabberEx.Module, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long GetValueInteger(eGrabberEx.Module module, string node)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Core.HardWare.eGrabberEx.Module.html">eGrabberEx.Module</a></td>
+        <td><span class="parametername">module</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">node</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Core_HardWare_eGrabberEx_GetValueString_" data-uid="Core.HardWare.eGrabberEx.GetValueString*"></a>
+  <h4 id="Core_HardWare_eGrabberEx_GetValueString_Core_HardWare_eGrabberEx_Module_System_String_" data-uid="Core.HardWare.eGrabberEx.GetValueString(Core.HardWare.eGrabberEx.Module,System.String)">GetValueString(eGrabberEx.Module, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetValueString(eGrabberEx.Module module, string node)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Core.HardWare.eGrabberEx.Module.html">eGrabberEx.Module</a></td>
+        <td><span class="parametername">module</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">node</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Core_HardWare_eGrabberEx_OnExecuteCommand_" data-uid="Core.HardWare.eGrabberEx.OnExecuteCommand*"></a>
+  <h4 id="Core_HardWare_eGrabberEx_OnExecuteCommand_Core_HardWare_eGrabberEx_Module_System_String_" data-uid="Core.HardWare.eGrabberEx.OnExecuteCommand(Core.HardWare.eGrabberEx.Module,System.String)">OnExecuteCommand(eGrabberEx.Module, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnExecuteCommand(eGrabberEx.Module module, string node)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Core.HardWare.eGrabberEx.Module.html">eGrabberEx.Module</a></td>
+        <td><span class="parametername">module</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">node</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Core_HardWare_eGrabberEx_ResetDeviceLinkLost_" data-uid="Core.HardWare.eGrabberEx.ResetDeviceLinkLost*"></a>
+  <h4 id="Core_HardWare_eGrabberEx_ResetDeviceLinkLost" data-uid="Core.HardWare.eGrabberEx.ResetDeviceLinkLost">ResetDeviceLinkLost()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ResetDeviceLinkLost()</code></pre>
+  </div>
+  
+  
+  <a id="Core_HardWare_eGrabberEx_ResetDeviceLinkReady_" data-uid="Core.HardWare.eGrabberEx.ResetDeviceLinkReady*"></a>
+  <h4 id="Core_HardWare_eGrabberEx_ResetDeviceLinkReady" data-uid="Core.HardWare.eGrabberEx.ResetDeviceLinkReady">ResetDeviceLinkReady()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ResetDeviceLinkReady()</code></pre>
+  </div>
+  
+  
+  <a id="Core_HardWare_eGrabberEx_RunScript_" data-uid="Core.HardWare.eGrabberEx.RunScript*"></a>
+  <h4 id="Core_HardWare_eGrabberEx_RunScript_System_String_" data-uid="Core.HardWare.eGrabberEx.RunScript(System.String)">RunScript(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RunScript(string path)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Core_HardWare_eGrabberEx_SaveColorImage_" data-uid="Core.HardWare.eGrabberEx.SaveColorImage*"></a>
+  <h4 id="Core_HardWare_eGrabberEx_SaveColorImage_System_String_" data-uid="Core.HardWare.eGrabberEx.SaveColorImage(System.String)">SaveColorImage(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SaveColorImage(string path)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Core_HardWare_eGrabberEx_SaveRawImage_" data-uid="Core.HardWare.eGrabberEx.SaveRawImage*"></a>
+  <h4 id="Core_HardWare_eGrabberEx_SaveRawImage_System_String_" data-uid="Core.HardWare.eGrabberEx.SaveRawImage(System.String)">SaveRawImage(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SaveRawImage(string path)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Core_HardWare_eGrabberEx_SetEnableHardwareConvert_" data-uid="Core.HardWare.eGrabberEx.SetEnableHardwareConvert*"></a>
+  <h4 id="Core_HardWare_eGrabberEx_SetEnableHardwareConvert_System_Boolean_" data-uid="Core.HardWare.eGrabberEx.SetEnableHardwareConvert(System.Boolean)">SetEnableHardwareConvert(Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetEnableHardwareConvert(bool bEnable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">bEnable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Core_HardWare_eGrabberEx_SetValueDouble_" data-uid="Core.HardWare.eGrabberEx.SetValueDouble*"></a>
+  <h4 id="Core_HardWare_eGrabberEx_SetValueDouble_Core_HardWare_eGrabberEx_Module_System_String_System_Double_" data-uid="Core.HardWare.eGrabberEx.SetValueDouble(Core.HardWare.eGrabberEx.Module,System.String,System.Double)">SetValueDouble(eGrabberEx.Module, String, Double)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetValueDouble(eGrabberEx.Module module, string node, double value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Core.HardWare.eGrabberEx.Module.html">eGrabberEx.Module</a></td>
+        <td><span class="parametername">module</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">node</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Core_HardWare_eGrabberEx_SetValueInt_" data-uid="Core.HardWare.eGrabberEx.SetValueInt*"></a>
+  <h4 id="Core_HardWare_eGrabberEx_SetValueInt_Core_HardWare_eGrabberEx_Module_System_String_System_Int32_" data-uid="Core.HardWare.eGrabberEx.SetValueInt(Core.HardWare.eGrabberEx.Module,System.String,System.Int32)">SetValueInt(eGrabberEx.Module, String, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetValueInt(eGrabberEx.Module module, string node, int value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Core.HardWare.eGrabberEx.Module.html">eGrabberEx.Module</a></td>
+        <td><span class="parametername">module</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">node</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Core_HardWare_eGrabberEx_SetValueString_" data-uid="Core.HardWare.eGrabberEx.SetValueString*"></a>
+  <h4 id="Core_HardWare_eGrabberEx_SetValueString_Core_HardWare_eGrabberEx_Module_System_String_System_String_" data-uid="Core.HardWare.eGrabberEx.SetValueString(Core.HardWare.eGrabberEx.Module,System.String,System.String)">SetValueString(eGrabberEx.Module, String, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetValueString(eGrabberEx.Module module, string node, string value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Core.HardWare.eGrabberEx.Module.html">eGrabberEx.Module</a></td>
+        <td><span class="parametername">module</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">node</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Core_HardWare_eGrabberEx_Start_" data-uid="Core.HardWare.eGrabberEx.Start*"></a>
+  <h4 id="Core_HardWare_eGrabberEx_Start_System_UInt64_" data-uid="Core.HardWare.eGrabberEx.Start(System.UInt64)">Start(UInt64)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Start(ulong grabCount = 18446744073709551615UL)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">grabCount</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Core_HardWare_eGrabberEx_Stop_" data-uid="Core.HardWare.eGrabberEx.Stop*"></a>
+  <h4 id="Core_HardWare_eGrabberEx_Stop" data-uid="Core.HardWare.eGrabberEx.Stop">Stop()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Stop()</code></pre>
+  </div>
+  
+  
+  <a id="Core_HardWare_eGrabberEx_WriteMementoWithLocalTime_" data-uid="Core.HardWare.eGrabberEx.WriteMementoWithLocalTime*"></a>
+  <h4 id="Core_HardWare_eGrabberEx_WriteMementoWithLocalTime_System_String_" data-uid="Core.HardWare.eGrabberEx.WriteMementoWithLocalTime(System.String)">WriteMementoWithLocalTime(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteMementoWithLocalTime(string message)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">message</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

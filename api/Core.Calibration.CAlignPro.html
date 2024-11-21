@@ -1,0 +1,359 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class CAlignPro
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class CAlignPro
+   ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Core.Calibration.CAlignPro">
+  
+  
+  <h1 id="Core_Calibration_CAlignPro" data-uid="Core.Calibration.CAlignPro" class="text-break">Class CAlignPro
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">CAlignPro</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Core.Calibration.html">Core.Calibration</a></h6>
+  <h6><strong>Assembly</strong>: ConnectedInsightCore.dll</h6>
+  <h5 id="Core_Calibration_CAlignPro_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class CAlignPro</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Core_Calibration_CAlignPro__ctor_" data-uid="Core.Calibration.CAlignPro.#ctor*"></a>
+  <h4 id="Core_Calibration_CAlignPro__ctor" data-uid="Core.Calibration.CAlignPro.#ctor">CAlignPro()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CAlignPro()</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Core_Calibration_CAlignPro_PartBasedCalibration_" data-uid="Core.Calibration.CAlignPro.PartBasedCalibration*"></a>
+  <h4 id="Core_Calibration_CAlignPro_PartBasedCalibration_Core_Calibration_CalibrationType_System_Boolean_System_Boolean_System_Double___System_Collections_Generic_List_Core_Calibration_CAlpsPointFeature__" data-uid="Core.Calibration.CAlignPro.PartBasedCalibration(Core.Calibration.CalibrationType,System.Boolean,System.Boolean,System.Double[],System.Collections.Generic.List{Core.Calibration.CAlpsPointFeature})">PartBasedCalibration(CalibrationType, Boolean, Boolean, Double[], List&lt;CAlpsPointFeature&gt;)</h4>
+  <div class="markdown level1 summary"><p>각 Step 마다 검출 된 Point 정보, Stage or Robot 위치 정보 들 을 기반으로 Stage or Robot 의 회전 중심 좌표계를 (캘리브레이션 결과) 계산 합니다
+(캘리브레이션 총 11 Step)</p>
+<p>시퀀스</p>
+<ol>
+<li>IsInit (true) 신호를 받게 되면 모든 정보 초기화 </li>
+<li>반복 되는 Step 마다 Point 정보, Stage or Robot 위치 현재 좌표 누적 </li>
+<li>_IsCompute (true) 신호를 받게 되면 현재 까지 누적된 정보를 이용 하여 캘리브레이션 결과 계산</li>
+</ol>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;CogTransform2DLinear&gt; PartBasedCalibration(CalibrationType _calibType, bool _IsInit, bool _IsCompute, double[] _CurPos, List&lt;CAlpsPointFeature&gt; _PointFeatureList)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Core.Calibration.CalibrationType.html">CalibrationType</a></td>
+        <td><span class="parametername">_calibType</span></td>
+        <td><p>캘리브레이션 타입 : 카메라 고정 or 카메라 이동 </p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">_IsInit</span></td>
+        <td><p>입력 True -&gt; 모든 데이터 초기화 및 시퀀스 시작 </p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">_IsCompute</span></td>
+        <td><p>입력 True -&gt; 캘리브레이션 결과 계산 (캘리브레이션 종료 시점으로 판단)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span>[]</td>
+        <td><span class="parametername">_CurPos</span></td>
+        <td><p>Calibration 수행 하는 Stage or Robot 현재 위치 , 입력 정보 double[3] [0]:CurX, [1]:CurY, [2]:CurT </p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Core.Calibration.CAlpsPointFeature.html">CAlpsPointFeature</a>&gt;</td>
+        <td><span class="parametername">_PointFeatureList</span></td>
+        <td><p>Point 정보를 담고 있는 클래스 리스트 형식 </p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">Cognex.VisionPro.CogTransform2DLinear</span>&gt;</td>
+        <td><p>캘리브레이션 결과 정보 (리스트 형식) (입력 받은 PointFeatureList 갯수 만큼 생성) </p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Core_Calibration_CAlignPro_PoseGenerator_" data-uid="Core.Calibration.CAlignPro.PoseGenerator*"></a>
+  <h4 id="Core_Calibration_CAlignPro_PoseGenerator_System_Boolean_System_Double_System_Double_System_Double_" data-uid="Core.Calibration.CAlignPro.PoseGenerator(System.Boolean,System.Double,System.Double,System.Double)">PoseGenerator(Boolean, Double, Double, Double)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Tuple&lt;bool, double, double, double&gt; PoseGenerator(bool _IsReset, double _XRange, double _YRange, double _TRange)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">_IsReset</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">_XRange</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">_YRange</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">_TRange</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Tuple</span>&lt;<span class="xref">System.Boolean</span>, <span class="xref">System.Double</span>, <span class="xref">System.Double</span>, <span class="xref">System.Double</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Core_Calibration_CAlignPro_StagePoseComputer_" data-uid="Core.Calibration.CAlignPro.StagePoseComputer*"></a>
+  <h4 id="Core_Calibration_CAlignPro_StagePoseComputer_Core_Calibration_CalibrationType_System_Double___System_Double___System_Collections_Generic_List_Core_Calibration_CAlpsPointFeature__" data-uid="Core.Calibration.CAlignPro.StagePoseComputer(Core.Calibration.CalibrationType,System.Double[],System.Double[],System.Collections.Generic.List{Core.Calibration.CAlpsPointFeature})">StagePoseComputer(CalibrationType, Double[], Double[], List&lt;CAlpsPointFeature&gt;)</h4>
+  <div class="markdown level1 summary"><p>입력 받은 정보를 기반으로 Object 를 Target (카메라 중심, 특정 지점) 에 맞춰 정렬 시키기 위해 필요한 이동량 을 계산 합니다</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double[] StagePoseComputer(CalibrationType _calibType, double[] _CurPos, double[] _OriginPos, List&lt;CAlpsPointFeature&gt; _PointFeatureList)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Core.Calibration.CalibrationType.html">CalibrationType</a></td>
+        <td><span class="parametername">_calibType</span></td>
+        <td><p>캘리브레이션 타입 : 카메라 고정 or 카메라 이동 </p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span>[]</td>
+        <td><span class="parametername">_CurPos</span></td>
+        <td><p>Align 을 수행 하는 Stage or Robot 현재 위치 , 입력 정보 double[3] [0]:CurX, [1]:CurY, [2]:CurT </p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span>[]</td>
+        <td><span class="parametername">_OriginPos</span></td>
+        <td><p>Calibration 시작 위치 , 입력 정보 double[3] [0]:CurX, [1]:CurY, [2]:CurT </p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Core.Calibration.CAlpsPointFeature.html">CAlpsPointFeature</a>&gt;</td>
+        <td><span class="parametername">_PointFeatureList</span></td>
+        <td><p>Point 정보를 담고 있는 클래스 리스트 형식 </p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span>[]</td>
+        <td><p>계산된 이동량을 반환 , 출력 정보 double[3] [0]:moveX, [1]:moveY, [2]:moveT </p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

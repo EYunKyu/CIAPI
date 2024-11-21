@@ -1,0 +1,416 @@
+{
+  "homepages": [],
+  "source_base_path": "D:/02. Dev/1. 사내 개발/플랫폼/1. Src/ConnectedInsightCore_코닉 매뉴얼 용 - 복사본/ConnectedInsightCore",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "ZcRFJgNhvhM6kAH28Vkb5TxxGPe7FlftmernEpHWKBw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html",
+          "hash": "yF4cM99miGSsrT64oV0kgkl56YkQylthgw5Gl1aJqzo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "BlPxk5mtl2kgfcZUgkEguqiSAR/EUyUTT4EdebwkQvs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "3JDZFukeoHKSMOtaoGOpr8s5HWvldnH5JMczJy9+CoI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/ConnectedInsightCore.CDefineDLL.ETimeType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConnectedInsightCore.CDefineDLL.ETimeType.html",
+          "hash": "0Z7mI6/jwM5k5+XkvgKNcnkvCnydNQIdyqkG7EhI6+0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/ConnectedInsightCore.CDefineDLL.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConnectedInsightCore.CDefineDLL.html",
+          "hash": "jj/TcNXHSVt7tUCXB+57KiUnTodQbdqm9S755yLbYZo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/ConnectedInsightCore.CFunc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConnectedInsightCore.CFunc.html",
+          "hash": "5hu/9U0ZbyFuExgs4fzJaBNHVYNSESWDV2Xj0/VKuSY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/ConnectedInsightCore.StructTime.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConnectedInsightCore.StructTime.html",
+          "hash": "JZclvJcdmsN4cIyU51Ru2fLCVskIV1VKk76M5p11NfQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/ConnectedInsightCore.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConnectedInsightCore.html",
+          "hash": "zgfYN7V2tn5spC1SedpGcux/MRNNTjDHh+GKzy3q+0Q="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Core.CThread.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Core.CThread.html",
+          "hash": "QU9eAo8H91GiqmQRTn9tHV1B/siHBy50P8dihJ1oDVU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Core.Calibration.CAlignPro.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Core.Calibration.CAlignPro.html",
+          "hash": "59BLuvqGTrSmORJ9oGbdcg3nlw1j+tPLZyrFyrrgBF4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Core.Calibration.CAlpsPointFeature.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Core.Calibration.CAlpsPointFeature.html",
+          "hash": "EzQ262Y7UmjXs288Lj/GhU75+c8SELygzvz55UxWfOY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Core.Calibration.CalibrationType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Core.Calibration.CalibrationType.html",
+          "hash": "7oAIlV03H6zmyzoS0ErRw0Wt+do6mb53V+3nkZbPQgg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Core.Calibration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Core.Calibration.html",
+          "hash": "OerwpMUa7t22D0fP07X/X4FPmPLLWVmXJ+tXbUVtGws="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Core.HardWare.CALLTYPE.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Core.HardWare.CALLTYPE.html",
+          "hash": "yMlYkTgA6cxxuXsfql+cv2lvEzddDiMYDUyV9VlocOM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Core.HardWare.CCamera.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Core.HardWare.CCamera.html",
+          "hash": "DEFfKwOsYFXWXET4ZFE5D/6EfGttO1KFlG09mvvyAqY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Core.HardWare.CCameraGigE.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Core.HardWare.CCameraGigE.html",
+          "hash": "IyD8TxzouWgrO6xj+ch+5nidnl9fikS1uf4G+4fFXOs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Core.HardWare.CCameraSimul.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Core.HardWare.CCameraSimul.html",
+          "hash": "H8k51cvdMO5r3ftIIS2HDF3uxqn2eps0i2+o1p+xtXE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Core.HardWare.CEuresys.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Core.HardWare.CEuresys.html",
+          "hash": "cb7Jw+9s1zlqBLRctv4cFcQ8hsbvxB+GxDSzbANK8m4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Core.HardWare.CGrabInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Core.HardWare.CGrabInfo.html",
+          "hash": "5j0wIfcotUioBj4KESvC/Bx9y3e/OmJgstFwBxC77AM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Core.HardWare.CMatrox.MatroxBaordNumber.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Core.HardWare.CMatrox.MatroxBaordNumber.html",
+          "hash": "IYyf2DDr44h6zkUZmIesHjsCEv2Go+AN2u2YTbhc1pA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Core.HardWare.CMatrox.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Core.HardWare.CMatrox.html",
+          "hash": "n63JtGcDjvNWI+6X4iw0rDEiRpefQiLyzoWPKne5g74="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Core.HardWare.eGrabberEx.Module.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Core.HardWare.eGrabberEx.Module.html",
+          "hash": "f0I3eumRPPPYkbDfbUxZKdHxvezpC1nsnAMQTCxPGSM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Core.HardWare.eGrabberEx.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Core.HardWare.eGrabberEx.html",
+          "hash": "8ma+xVjAcqz07mOKRjhCWV64FLjHlaaVkpvNPKWEJmI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Core.HardWare.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Core.HardWare.html",
+          "hash": "CuCfgh8eqV2J+o+uVUZTPmPNlCVHesL6icgTIeRwwRs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Core.Utility.CImage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Core.Utility.CImage.html",
+          "hash": "jyM/AB2AfRJSlWAOQvFrdSTOnuhSkltHWBnjkpjLpj4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Core.Utility.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Core.Utility.html",
+          "hash": "zIvq7xz5/sbo3en0d8+bugXF44CAQgp7GzNIFzj49X0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Core.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Core.html",
+          "hash": "NO+GAgtnz/ED0P2ELiZCkknMQ4T86iEc2xa/S7ndrFk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "obj/api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "6JO0ddHTGTVLjsApT7Ad5E2njYEJ94Lr4/cq6TMW3uM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "Oa9PuD4E1hvZnCkVjUgzNBX6S00Zo5YilamTERTZo54="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Disable incremental build by force rebuild option.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "ForceRebuild"
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 3,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 24,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: it's disabled.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

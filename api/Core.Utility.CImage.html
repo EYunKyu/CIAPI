@@ -1,0 +1,1103 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class CImage
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class CImage
+   ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Core.Utility.CImage">
+  
+  
+  <h1 id="Core_Utility_CImage" data-uid="Core.Utility.CImage" class="text-break">Class CImage
+  </h1>
+  <div class="markdown level0 summary"><p>모든 이미지는 CImage 클래스에서 관리됩니다.
+이 클래스에서 이미지 할당, 복사, 저장등의 기능을 수행합니다.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">CImage</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Core.Utility.html">Core.Utility</a></h6>
+  <h6><strong>Assembly</strong>: ConnectedInsightCore.dll</h6>
+  <h5 id="Core_Utility_CImage_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class CImage</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Core_Utility_CImage__ctor_" data-uid="Core.Utility.CImage.#ctor*"></a>
+  <h4 id="Core_Utility_CImage__ctor" data-uid="Core.Utility.CImage.#ctor">CImage()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CImage()</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="Core_Utility_CImage_cPixelFormats" data-uid="Core.Utility.CImage.cPixelFormats">cPixelFormats</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly PixelFormat[] cPixelFormats</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Drawing.Imaging.PixelFormat</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Core_Utility_CImage_PIXEL_UNKNOWN" data-uid="Core.Utility.CImage.PIXEL_UNKNOWN">PIXEL_UNKNOWN</h4>
+  <div class="markdown level1 summary"><p>픽셀 형식 없음</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int PIXEL_UNKNOWN</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Core_Utility_CImage_PIXEL16" data-uid="Core.Utility.CImage.PIXEL16">PIXEL16</h4>
+  <div class="markdown level1 summary"><p>픽셀 형식은 픽셀당 16 비트입니다.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int PIXEL16</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Core_Utility_CImage_PIXEL24" data-uid="Core.Utility.CImage.PIXEL24">PIXEL24</h4>
+  <div class="markdown level1 summary"><p>픽셀 형식은 픽셀 당 24 비트입니다.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int PIXEL24</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Core_Utility_CImage_PIXEL32" data-uid="Core.Utility.CImage.PIXEL32">PIXEL32</h4>
+  <div class="markdown level1 summary"><p>픽셀 형식은 픽셀 당 32 비트입니다.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int PIXEL32</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Core_Utility_CImage_PIXEL8" data-uid="Core.Utility.CImage.PIXEL8">PIXEL8</h4>
+  <div class="markdown level1 summary"><p>픽셀 형식은 픽셀 당 8 비트입니다.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int PIXEL8</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Core_Utility_CImage_CogImage_" data-uid="Core.Utility.CImage.CogImage*"></a>
+  <h4 id="Core_Utility_CImage_CogImage" data-uid="Core.Utility.CImage.CogImage">CogImage</h4>
+  <div class="markdown level1 summary"><p>VisionPro Type의 Gray Scale Image를 담을 변수</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ICogImage CogImage { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Cognex.VisionPro.ICogImage</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Core_Utility_CImage_ColorGrayImage_" data-uid="Core.Utility.CImage.ColorGrayImage*"></a>
+  <h4 id="Core_Utility_CImage_ColorGrayImage" data-uid="Core.Utility.CImage.ColorGrayImage">ColorGrayImage</h4>
+  <div class="markdown level1 summary"><p>VisionPro Type의 Color Image를 담을 변수</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ICogImage ColorGrayImage { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Cognex.VisionPro.ICogImage</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Core_Utility_CImage_m_nHeight_" data-uid="Core.Utility.CImage.m_nHeight*"></a>
+  <h4 id="Core_Utility_CImage_m_nHeight" data-uid="Core.Utility.CImage.m_nHeight">m_nHeight</h4>
+  <div class="markdown level1 summary"><p>이미지의 세로 사이즈</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int m_nHeight { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Core_Utility_CImage_m_nImageSize_" data-uid="Core.Utility.CImage.m_nImageSize*"></a>
+  <h4 id="Core_Utility_CImage_m_nImageSize" data-uid="Core.Utility.CImage.m_nImageSize">m_nImageSize</h4>
+  <div class="markdown level1 summary"><p>이미지 버퍼의 크기</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int m_nImageSize { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Core_Utility_CImage_m_nPixelFormat_" data-uid="Core.Utility.CImage.m_nPixelFormat*"></a>
+  <h4 id="Core_Utility_CImage_m_nPixelFormat" data-uid="Core.Utility.CImage.m_nPixelFormat">m_nPixelFormat</h4>
+  <div class="markdown level1 summary"><p>이미지의 PixelFormat</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int m_nPixelFormat { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Core_Utility_CImage_m_nStride_" data-uid="Core.Utility.CImage.m_nStride*"></a>
+  <h4 id="Core_Utility_CImage_m_nStride" data-uid="Core.Utility.CImage.m_nStride">m_nStride</h4>
+  <div class="markdown level1 summary"><p>이미지의 한 행에서 다음 행까지 가는데 필요한 byte의 크기 (이미지 한줄의 크기)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int m_nStride { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Core_Utility_CImage_m_nWidth_" data-uid="Core.Utility.CImage.m_nWidth*"></a>
+  <h4 id="Core_Utility_CImage_m_nWidth" data-uid="Core.Utility.CImage.m_nWidth">m_nWidth</h4>
+  <div class="markdown level1 summary"><p>이미지의 가로 사이즈</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int m_nWidth { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Core_Utility_CImage_m_pImage_" data-uid="Core.Utility.CImage.m_pImage*"></a>
+  <h4 id="Core_Utility_CImage_m_pImage" data-uid="Core.Utility.CImage.m_pImage">m_pImage</h4>
+  <div class="markdown level1 summary"><p>이미지 byte 버퍼</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte[] m_pImage { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Core_Utility_CImage_pData_" data-uid="Core.Utility.CImage.pData*"></a>
+  <h4 id="Core_Utility_CImage_pData" data-uid="Core.Utility.CImage.pData">pData</h4>
+  <div class="markdown level1 summary"><p>이미지 버퍼</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IntPtr pData { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Core_Utility_CImage_Allocate_" data-uid="Core.Utility.CImage.Allocate*"></a>
+  <h4 id="Core_Utility_CImage_Allocate_System_Int32_System_Int32_System_Int32_" data-uid="Core.Utility.CImage.Allocate(System.Int32,System.Int32,System.Int32)">Allocate(Int32, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>이미지 버퍼의 메모리를 할당 합니다.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Allocate(int nWidth, int nHeight, int pixelFormat)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nWidth</span></td>
+        <td><p>이미지의 가로 사이즈</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nHeight</span></td>
+        <td><p>이미지의 세로 사이즈</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pixelFormat</span></td>
+        <td><p>이미지의 PixelFormat</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Core_Utility_CImage_Allocate_" data-uid="Core.Utility.CImage.Allocate*"></a>
+  <h4 id="Core_Utility_CImage_Allocate_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="Core.Utility.CImage.Allocate(System.Int32,System.Int32,System.Int32,System.Int32)">Allocate(Int32, Int32, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>이미지 버퍼의 메모리를 할당 합니다.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Allocate(int nWidth, int nHeight, int nStride, int pixelFormat)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nWidth</span></td>
+        <td><p>이미지의 가로 사이즈</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nHeight</span></td>
+        <td><p>이미지의 세로 사이즈</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nStride</span></td>
+        <td><p>이미지의 Stride</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pixelFormat</span></td>
+        <td><p>이미지의 PixelFormat</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Core_Utility_CImage_Allocate_" data-uid="Core.Utility.CImage.Allocate*"></a>
+  <h4 id="Core_Utility_CImage_Allocate_System_Int32_System_Int32_System_Int32_System_IntPtr_System_Boolean_" data-uid="Core.Utility.CImage.Allocate(System.Int32,System.Int32,System.Int32,System.IntPtr,System.Boolean)">Allocate(Int32, Int32, Int32, IntPtr, Boolean)</h4>
+  <div class="markdown level1 summary"><p>이미지 버퍼의 메모리를 할당 합니다.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Allocate(int nWidth, int nHeight, int pixelFormat, IntPtr pImage, bool bDummy = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nWidth</span></td>
+        <td><p>이미지의 가로 사이즈</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nHeight</span></td>
+        <td><p>이미지의 세로 사이즈</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pixelFormat</span></td>
+        <td><p>이미지의 PixelFormat</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">pImage</span></td>
+        <td><p>이미지 버퍼</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">bDummy</span></td>
+        <td><p>더미 여부 체크</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Core_Utility_CImage_Copy_" data-uid="Core.Utility.CImage.Copy*"></a>
+  <h4 id="Core_Utility_CImage_Copy_Core_Utility_CImage_" data-uid="Core.Utility.CImage.Copy(Core.Utility.CImage)">Copy(CImage)</h4>
+  <div class="markdown level1 summary"><p>이미지를 복사 합니다.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Copy(CImage SrcImg)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Core.Utility.CImage.html">CImage</a></td>
+        <td><span class="parametername">SrcImg</span></td>
+        <td><p>CImage 객체</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Core_Utility_CImage_Copy_" data-uid="Core.Utility.CImage.Copy*"></a>
+  <h4 id="Core_Utility_CImage_Copy_System_Int32_System_Int32_System_Int32_Cognex_VisionPro_ICogImage_" data-uid="Core.Utility.CImage.Copy(System.Int32,System.Int32,System.Int32,Cognex.VisionPro.ICogImage)">Copy(Int32, Int32, Int32, ICogImage)</h4>
+  <div class="markdown level1 summary"><p>이미지를 복사 합니다.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Copy(int nWidth, int nHeight, int nPixelFormat, ICogImage pImage)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nWidth</span></td>
+        <td><p>이미지의 가로 사이즈</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nHeight</span></td>
+        <td><p>이미지의 세로 사이즈</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nPixelFormat</span></td>
+        <td><p>이미지의 PixelFormat</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Cognex.VisionPro.ICogImage</span></td>
+        <td><span class="parametername">pImage</span></td>
+        <td><p>VisionPro Type의 이미지 버퍼</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Core_Utility_CImage_Copy_" data-uid="Core.Utility.CImage.Copy*"></a>
+  <h4 id="Core_Utility_CImage_Copy_System_Int32_System_Int32_System_Int32_System_IntPtr_" data-uid="Core.Utility.CImage.Copy(System.Int32,System.Int32,System.Int32,System.IntPtr)">Copy(Int32, Int32, Int32, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>이미지를 복사 합니다.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Copy(int nWidth, int nHeight, int nPixelFormat, IntPtr pImage)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nWidth</span></td>
+        <td><p>이미지의 가로 사이즈</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nHeight</span></td>
+        <td><p>이미지의 세로 사이즈</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nPixelFormat</span></td>
+        <td><p>이미지의 PixelFormat</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">pImage</span></td>
+        <td><p>이미지 버퍼</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Core_Utility_CImage_Copy_" data-uid="Core.Utility.CImage.Copy*"></a>
+  <h4 id="Core_Utility_CImage_Copy_System_Int32_System_Int32_System_Int32_System_IntPtr_System_Byte___" data-uid="Core.Utility.CImage.Copy(System.Int32,System.Int32,System.Int32,System.IntPtr,System.Byte[])">Copy(Int32, Int32, Int32, IntPtr, Byte[])</h4>
+  <div class="markdown level1 summary"><p>이미지를 복사 합니다.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Copy(int nWidth, int nHeight, int nPixelFormat, IntPtr pImage, byte[] pByteImg)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nWidth</span></td>
+        <td><p>이미지의 가로 사이즈</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nHeight</span></td>
+        <td><p>이미지의 세로 사이즈</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nPixelFormat</span></td>
+        <td><p>이미지의 PixelFormat</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">pImage</span></td>
+        <td><p>이미지 버퍼</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">pByteImg</span></td>
+        <td><p>이미지 byte 버퍼</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Core_Utility_CImage_Draw_" data-uid="Core.Utility.CImage.Draw*"></a>
+  <h4 id="Core_Utility_CImage_Draw_System_Drawing_Graphics_" data-uid="Core.Utility.CImage.Draw(System.Drawing.Graphics)">Draw(Graphics)</h4>
+  <div class="markdown level1 summary"><p>이미지를 Display하는 동작을 수행 합니다.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Draw(Graphics graphics)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Drawing.Graphics</span></td>
+        <td><span class="parametername">graphics</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Core_Utility_CImage_Free_" data-uid="Core.Utility.CImage.Free*"></a>
+  <h4 id="Core_Utility_CImage_Free" data-uid="Core.Utility.CImage.Free">Free()</h4>
+  <div class="markdown level1 summary"><p>할당된 이미지의 메모리를 해제합니다.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Free()</code></pre>
+  </div>
+  
+  
+  <a id="Core_Utility_CImage_ImgRead_" data-uid="Core.Utility.CImage.ImgRead*"></a>
+  <h4 id="Core_Utility_CImage_ImgRead_System_String_" data-uid="Core.Utility.CImage.ImgRead(System.String)">ImgRead(String)</h4>
+  <div class="markdown level1 summary"><p>저장된 이미지를 로드하여 메모리로 읽어 오는 동작을 합니다.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ImgRead(string sPath)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sPath</span></td>
+        <td><p>로드할 이미지의 경로</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Core_Utility_CImage_SaveBmp_" data-uid="Core.Utility.CImage.SaveBmp*"></a>
+  <h4 id="Core_Utility_CImage_SaveBmp_System_String_Core_Utility_CImage_" data-uid="Core.Utility.CImage.SaveBmp(System.String,Core.Utility.CImage)">SaveBmp(String, CImage)</h4>
+  <div class="markdown level1 summary"><p>이미지를 BMP Format으로 저장합니다.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SaveBmp(string sPath, CImage Image)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sPath</span></td>
+        <td><p>이미지 저장 경로</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Core.Utility.CImage.html">CImage</a></td>
+        <td><span class="parametername">Image</span></td>
+        <td><p>CImage 객체</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Core_Utility_CImage_SaveJpeg_" data-uid="Core.Utility.CImage.SaveJpeg*"></a>
+  <h4 id="Core_Utility_CImage_SaveJpeg_System_String_Core_Utility_CImage_System_Int64_" data-uid="Core.Utility.CImage.SaveJpeg(System.String,Core.Utility.CImage,System.Int64)">SaveJpeg(String, CImage, Int64)</h4>
+  <div class="markdown level1 summary"><p>이미지를 JPG 형태로 저장합니다.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SaveJpeg(string path, CImage Image, long nQuality = 100L)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>이미지 저장 경로</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Core.Utility.CImage.html">CImage</a></td>
+        <td><span class="parametername">Image</span></td>
+        <td><p>CImage 객체</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">nQuality</span></td>
+        <td><p>저장 품질 설정(Default : 100%)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

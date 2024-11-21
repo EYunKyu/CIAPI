@@ -1,0 +1,464 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class CCameraGigE
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class CCameraGigE
+   ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Core.HardWare.CCameraGigE">
+  
+  
+  <h1 id="Core_HardWare_CCameraGigE" data-uid="Core.HardWare.CCameraGigE" class="text-break">Class CCameraGigE
+  </h1>
+  <div class="markdown level0 summary"><p>GIGE 카메라를 제어 할 수 있는 카메라 클래스</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Core.HardWare.CCamera.html">CCamera</a></div>
+    <div class="level2"><span class="xref">CCameraGigE</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Core.HardWare.CCamera.html#Core_HardWare_CCamera_m_nImgWidth">CCamera.m_nImgWidth</a>
+    </div>
+    <div>
+      <a class="xref" href="Core.HardWare.CCamera.html#Core_HardWare_CCamera_m_nImgHeight">CCamera.m_nImgHeight</a>
+    </div>
+    <div>
+      <a class="xref" href="Core.HardWare.CCamera.html#Core_HardWare_CCamera_m_nPixelFormat">CCamera.m_nPixelFormat</a>
+    </div>
+    <div>
+      <a class="xref" href="Core.HardWare.CCamera.html#Core_HardWare_CCamera_m_nStride">CCamera.m_nStride</a>
+    </div>
+    <div>
+      <a class="xref" href="Core.HardWare.CCamera.html#Core_HardWare_CCamera_m_bIsIntialized">CCamera.m_bIsIntialized</a>
+    </div>
+    <div>
+      <a class="xref" href="Core.HardWare.CCamera.html#Core_HardWare_CCamera_m_bIsConnected">CCamera.m_bIsConnected</a>
+    </div>
+    <div>
+      <a class="xref" href="Core.HardWare.CCamera.html#Core_HardWare_CCamera_m_bIsGrab">CCamera.m_bIsGrab</a>
+    </div>
+    <div>
+      <a class="xref" href="Core.HardWare.CCamera.html#Core_HardWare_CCamera_m_sSerialNumber">CCamera.m_sSerialNumber</a>
+    </div>
+    <div>
+      <a class="xref" href="Core.HardWare.CCamera.html#Core_HardWare_CCamera_m_sCamFile">CCamera.m_sCamFile</a>
+    </div>
+    <div>
+      <a class="xref" href="Core.HardWare.CCamera.html#Core_HardWare_CCamera_m_sCurrentEquipment">CCamera.m_sCurrentEquipment</a>
+    </div>
+    <div>
+      <a class="xref" href="Core.HardWare.CCamera.html#Core_HardWare_CCamera_m_dExposureTime">CCamera.m_dExposureTime</a>
+    </div>
+    <div>
+      <a class="xref" href="Core.HardWare.CCamera.html#Core_HardWare_CCamera_m_dGain">CCamera.m_dGain</a>
+    </div>
+    <div>
+      <a class="xref" href="Core.HardWare.CCamera.html#Core_HardWare_CCamera_GrabInfo">CCamera.GrabInfo</a>
+    </div>
+    <div>
+      <a class="xref" href="Core.HardWare.CCamera.html#Core_HardWare_CCamera_CamActionInfo">CCamera.CamActionInfo</a>
+    </div>
+    <div>
+      <a class="xref" href="Core.HardWare.CCamera.html#Core_HardWare_CCamera_CameraPick_System_Int32_System_Int32_System_String_">CCamera.CameraPick(Int32, Int32, String)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Core.HardWare.html">Core.HardWare</a></h6>
+  <h6><strong>Assembly</strong>: ConnectedInsightCore.dll</h6>
+  <h5 id="Core_HardWare_CCameraGigE_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class CCameraGigE : CCamera, IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Core_HardWare_CCameraGigE__ctor_" data-uid="Core.HardWare.CCameraGigE.#ctor*"></a>
+  <h4 id="Core_HardWare_CCameraGigE__ctor" data-uid="Core.HardWare.CCameraGigE.#ctor">CCameraGigE()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CCameraGigE()</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="Core_HardWare_CCameraGigE_m_nCamNumber" data-uid="Core.HardWare.CCameraGigE.m_nCamNumber">m_nCamNumber</h4>
+  <div class="markdown level1 summary"><p>카메라의 번호</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int m_nCamNumber</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Core_HardWare_CCameraGigE_CameraSetting_" data-uid="Core.HardWare.CCameraGigE.CameraSetting*"></a>
+  <h4 id="Core_HardWare_CCameraGigE_CameraSetting_System_Double_System_Double_System_Double_" data-uid="Core.HardWare.CCameraGigE.CameraSetting(System.Double,System.Double,System.Double)">CameraSetting(Double, Double, Double)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void CameraSetting(double dExposureTime, double dContrast, double dGain)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">dExposureTime</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">dContrast</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">dGain</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Core.HardWare.CCamera.html#Core_HardWare_CCamera_CameraSetting_System_Double_System_Double_System_Double_">CCamera.CameraSetting(Double, Double, Double)</a></div>
+  
+  
+  <a id="Core_HardWare_CCameraGigE_Connect_" data-uid="Core.HardWare.CCameraGigE.Connect*"></a>
+  <h4 id="Core_HardWare_CCameraGigE_Connect" data-uid="Core.HardWare.CCameraGigE.Connect">Connect()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Connect()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Core.HardWare.CCamera.html#Core_HardWare_CCamera_Connect">CCamera.Connect()</a></div>
+  
+  
+  <a id="Core_HardWare_CCameraGigE_DisConnect_" data-uid="Core.HardWare.CCameraGigE.DisConnect*"></a>
+  <h4 id="Core_HardWare_CCameraGigE_DisConnect" data-uid="Core.HardWare.CCameraGigE.DisConnect">DisConnect()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void DisConnect()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Core.HardWare.CCamera.html#Core_HardWare_CCamera_DisConnect">CCamera.DisConnect()</a></div>
+  
+  
+  <a id="Core_HardWare_CCameraGigE_Dispose_" data-uid="Core.HardWare.CCameraGigE.Dispose*"></a>
+  <h4 id="Core_HardWare_CCameraGigE_Dispose" data-uid="Core.HardWare.CCameraGigE.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Dispose()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Core.HardWare.CCamera.html#Core_HardWare_CCamera_Dispose">CCamera.Dispose()</a></div>
+  
+  
+  <a id="Core_HardWare_CCameraGigE_GrabHalt_" data-uid="Core.HardWare.CCameraGigE.GrabHalt*"></a>
+  <h4 id="Core_HardWare_CCameraGigE_GrabHalt" data-uid="Core.HardWare.CCameraGigE.GrabHalt">GrabHalt()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void GrabHalt()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Core.HardWare.CCamera.html#Core_HardWare_CCamera_GrabHalt">CCamera.GrabHalt()</a></div>
+  
+  
+  <a id="Core_HardWare_CCameraGigE_GrabStart_" data-uid="Core.HardWare.CCameraGigE.GrabStart*"></a>
+  <h4 id="Core_HardWare_CCameraGigE_GrabStart" data-uid="Core.HardWare.CCameraGigE.GrabStart">GrabStart()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void GrabStart()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Core.HardWare.CCamera.html#Core_HardWare_CCamera_GrabStart">CCamera.GrabStart()</a></div>
+  
+  
+  <a id="Core_HardWare_CCameraGigE_Initialize_" data-uid="Core.HardWare.CCameraGigE.Initialize*"></a>
+  <h4 id="Core_HardWare_CCameraGigE_Initialize_Core_HardWare_CCamera_System_String_System_String_" data-uid="Core.HardWare.CCameraGigE.Initialize(Core.HardWare.CCamera,System.String,System.String)">Initialize(CCamera, String, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Initialize(CCamera _Camera, string _CamFile, string _sBoardType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Core.HardWare.CCamera.html">CCamera</a></td>
+        <td><span class="parametername">_Camera</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">_CamFile</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">_sBoardType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Core.HardWare.CCamera.html#Core_HardWare_CCamera_Initialize_Core_HardWare_CCamera_System_String_System_String_">CCamera.Initialize(CCamera, String, String)</a></div>
+  
+  
+  <a id="Core_HardWare_CCameraGigE_IsConnected_" data-uid="Core.HardWare.CCameraGigE.IsConnected*"></a>
+  <h4 id="Core_HardWare_CCameraGigE_IsConnected" data-uid="Core.HardWare.CCameraGigE.IsConnected">IsConnected()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsConnected()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Core.HardWare.CCamera.html#Core_HardWare_CCamera_IsConnected">CCamera.IsConnected()</a></div>
+  
+  
+  <a id="Core_HardWare_CCameraGigE_ResetIO_" data-uid="Core.HardWare.CCameraGigE.ResetIO*"></a>
+  <h4 id="Core_HardWare_CCameraGigE_ResetIO" data-uid="Core.HardWare.CCameraGigE.ResetIO">ResetIO()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void ResetIO()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Core.HardWare.CCamera.html#Core_HardWare_CCamera_ResetIO">CCamera.ResetIO()</a></div>
+  
+  
+  <a id="Core_HardWare_CCameraGigE_Uninitialize_" data-uid="Core.HardWare.CCameraGigE.Uninitialize*"></a>
+  <h4 id="Core_HardWare_CCameraGigE_Uninitialize" data-uid="Core.HardWare.CCameraGigE.Uninitialize">Uninitialize()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Uninitialize()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Core.HardWare.CCamera.html#Core_HardWare_CCamera_Uninitialize">CCamera.Uninitialize()</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

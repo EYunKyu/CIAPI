@@ -1,0 +1,814 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class CCamera
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class CCamera
+   ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Core.HardWare.CCamera">
+  
+  
+  <h1 id="Core_HardWare_CCamera" data-uid="Core.HardWare.CCamera" class="text-break">Class CCamera
+  </h1>
+  <div class="markdown level0 summary"><p>모든 카메라 카메라 클래스는 CCamera 클래스를 기반으로 작성됩니다.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">CCamera</span></div>
+      <div class="level2"><a class="xref" href="Core.HardWare.CCameraGigE.html">CCameraGigE</a></div>
+      <div class="level2"><a class="xref" href="Core.HardWare.CCameraSimul.html">CCameraSimul</a></div>
+      <div class="level2"><a class="xref" href="Core.HardWare.CEuresys.html">CEuresys</a></div>
+      <div class="level2"><a class="xref" href="Core.HardWare.CMatrox.html">CMatrox</a></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Core.HardWare.html">Core.HardWare</a></h6>
+  <h6><strong>Assembly</strong>: ConnectedInsightCore.dll</h6>
+  <h5 id="Core_HardWare_CCamera_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class CCamera : IDisposable</code></pre>
+  </div>
+  <h5 id="Core_HardWare_CCamera_examples"><strong>Examples</strong></h5>
+  <pre><code>다음은 CCamera 클래스 사용에 대한 예시입니다.
+int nCameraPick = Define.MATROX;
+CCamera m_Camera = CCamera.CameraPick(nCameraPick, m_nCamNumber, RecipePath + &quot;\\&quot;);
+
+m_Camera.m_dExposureTime = theRecipe.m_dExposureTime[m_nCamNumber];
+m_Camera.m_dGain = theRecipe.m_dGain[m_nCamNumber];
+m_Camera.m_sCurrentEquipment = theRecipe.m_sCurrentEquipment;
+
+m_Camera.CamActionInfo = CameraStatus;                           
+m_Camera.Initialize(m_Camera);
+m_Camera.Connect();
+
+m_bIsConnected = m_Camera.IsConnected();</code></pre>
+
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="Core_HardWare_CCamera_GrabInfo" data-uid="Core.HardWare.CCamera.GrabInfo">GrabInfo</h4>
+  <div class="markdown level1 summary"><p>Grab후 관련된 정보를 담기 위한 객체</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CGrabInfo GrabInfo</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Core.HardWare.CGrabInfo.html">CGrabInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Core_HardWare_CCamera_m_bIsConnected" data-uid="Core.HardWare.CCamera.m_bIsConnected">m_bIsConnected</h4>
+  <div class="markdown level1 summary"><p>카메라의 Connect Check</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool m_bIsConnected</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Core_HardWare_CCamera_m_bIsGrab" data-uid="Core.HardWare.CCamera.m_bIsGrab">m_bIsGrab</h4>
+  <div class="markdown level1 summary"><p>카메라가 Grab Check (그랩을 하고 있는지 아닌지 )</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool m_bIsGrab</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Core_HardWare_CCamera_m_bIsIntialized" data-uid="Core.HardWare.CCamera.m_bIsIntialized">m_bIsIntialized</h4>
+  <div class="markdown level1 summary"><p>카메라의 Initialize Check</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool m_bIsIntialized</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Core_HardWare_CCamera_m_dExposureTime" data-uid="Core.HardWare.CCamera.m_dExposureTime">m_dExposureTime</h4>
+  <div class="markdown level1 summary"><p>카메라의 ExposureTime</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double m_dExposureTime</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Core_HardWare_CCamera_m_dGain" data-uid="Core.HardWare.CCamera.m_dGain">m_dGain</h4>
+  <div class="markdown level1 summary"><p>카메라의 Gain</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double m_dGain</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Core_HardWare_CCamera_m_nImgHeight" data-uid="Core.HardWare.CCamera.m_nImgHeight">m_nImgHeight</h4>
+  <div class="markdown level1 summary"><p>이미지의 세로 사이즈</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long m_nImgHeight</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Core_HardWare_CCamera_m_nImgWidth" data-uid="Core.HardWare.CCamera.m_nImgWidth">m_nImgWidth</h4>
+  <div class="markdown level1 summary"><p>이미지의 가로 사이즈</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long m_nImgWidth</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Core_HardWare_CCamera_m_nPixelFormat" data-uid="Core.HardWare.CCamera.m_nPixelFormat">m_nPixelFormat</h4>
+  <div class="markdown level1 summary"><p>이미지의 PixelFormat</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int m_nPixelFormat</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Core_HardWare_CCamera_m_nStride" data-uid="Core.HardWare.CCamera.m_nStride">m_nStride</h4>
+  <div class="markdown level1 summary"><p>이미지의 한 행에서 다음 행까지 가는데 필요한 byte의 크기 (이미지 한줄의 크기)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int m_nStride</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Core_HardWare_CCamera_m_sCamFile" data-uid="Core.HardWare.CCamera.m_sCamFile">m_sCamFile</h4>
+  <div class="markdown level1 summary"><p>카메라의 CamFile
+CamFile은 카메라의 설정 정보를 저장하는 파일을 말합니다.
+각 카메라 제조사마다 CamFile의 형식은 상이하며, Matrox는 dcf, Euresys는 js 파일에 카메라 설정 정보를 저장합니다.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected string m_sCamFile</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Core_HardWare_CCamera_m_sCurrentEquipment" data-uid="Core.HardWare.CCamera.m_sCurrentEquipment">m_sCurrentEquipment</h4>
+  <div class="markdown level1 summary"><p>장비명 (필요시 사용)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string m_sCurrentEquipment</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Core_HardWare_CCamera_m_sSerialNumber" data-uid="Core.HardWare.CCamera.m_sSerialNumber">m_sSerialNumber</h4>
+  <div class="markdown level1 summary"><p>카메라의 시리얼 번호
+GIGE 카메라의 경우 시리얼 번호를 가지고 Connect 처리를 진행 합니다.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected string m_sSerialNumber</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Core_HardWare_CCamera_CamActionInfo_" data-uid="Core.HardWare.CCamera.CamActionInfo*"></a>
+  <h4 id="Core_HardWare_CCamera_CamActionInfo" data-uid="Core.HardWare.CCamera.CamActionInfo">CamActionInfo</h4>
+  <div class="markdown level1 summary"><p>카메라의 동작 상태를 체크 하기 위한 Delegate</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action&lt;CALLTYPE, object&gt; CamActionInfo { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<a class="xref" href="Core.HardWare.CALLTYPE.html">CALLTYPE</a>, <span class="xref">System.Object</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Core_HardWare_CCamera_CameraPick_" data-uid="Core.HardWare.CCamera.CameraPick*"></a>
+  <h4 id="Core_HardWare_CCamera_CameraPick_System_Int32_System_Int32_System_String_" data-uid="Core.HardWare.CCamera.CameraPick(System.Int32,System.Int32,System.String)">CameraPick(Int32, Int32, String)</h4>
+  <div class="markdown level1 summary"><p>카메라 객체를 리턴
+Simulation : -1, EURESYS : 0, GIGE : 1, MATROX : 2
+GIGE 카메라는 제조사에 상관없이 카메라를 연결 하여 사용 할 수 있습니다.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CCamera CameraPick(int nCameraType, int nCamNum, string sPath)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nCameraType</span></td>
+        <td><p>카메라 선택</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nCamNum</span></td>
+        <td><p>카메라 번호</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sPath</span></td>
+        <td><p>CamFile의 경로</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Core.HardWare.CCamera.html">CCamera</a></td>
+        <td><p>카메라 타입에 따라 해당 객체 리턴</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Core_HardWare_CCamera_CameraSetting_" data-uid="Core.HardWare.CCamera.CameraSetting*"></a>
+  <h4 id="Core_HardWare_CCamera_CameraSetting_System_Double_System_Double_System_Double_" data-uid="Core.HardWare.CCamera.CameraSetting(System.Double,System.Double,System.Double)">CameraSetting(Double, Double, Double)</h4>
+  <div class="markdown level1 summary"><p>카메라의 ExposureTime, Contrast, Gain값을 조정 합니다.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void CameraSetting(double dExposureTime, double dContrast, double dGain)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">dExposureTime</span></td>
+        <td><p>카메라의 Exposure Time</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">dContrast</span></td>
+        <td><p>카메라의 Contrast</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">dGain</span></td>
+        <td><p>카메라의 Gain</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Core_HardWare_CCamera_Connect_" data-uid="Core.HardWare.CCamera.Connect*"></a>
+  <h4 id="Core_HardWare_CCamera_Connect" data-uid="Core.HardWare.CCamera.Connect">Connect()</h4>
+  <div class="markdown level1 summary"><p>카메라의 Connect 메소드</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract bool Connect()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Core_HardWare_CCamera_DisConnect_" data-uid="Core.HardWare.CCamera.DisConnect*"></a>
+  <h4 id="Core_HardWare_CCamera_DisConnect" data-uid="Core.HardWare.CCamera.DisConnect">DisConnect()</h4>
+  <div class="markdown level1 summary"><p>카메라의 DisConnect 메소드</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void DisConnect()</code></pre>
+  </div>
+  
+  
+  <a id="Core_HardWare_CCamera_Dispose_" data-uid="Core.HardWare.CCamera.Dispose*"></a>
+  <h4 id="Core_HardWare_CCamera_Dispose" data-uid="Core.HardWare.CCamera.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"><p>Dispose</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void Dispose()</code></pre>
+  </div>
+  
+  
+  <a id="Core_HardWare_CCamera_GrabHalt_" data-uid="Core.HardWare.CCamera.GrabHalt*"></a>
+  <h4 id="Core_HardWare_CCamera_GrabHalt" data-uid="Core.HardWare.CCamera.GrabHalt">GrabHalt()</h4>
+  <div class="markdown level1 summary"><p>카메라의 GrabHalt 메소드
+카메라의 Grab을 중지합니다.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void GrabHalt()</code></pre>
+  </div>
+  
+  
+  <a id="Core_HardWare_CCamera_GrabStart_" data-uid="Core.HardWare.CCamera.GrabStart*"></a>
+  <h4 id="Core_HardWare_CCamera_GrabStart" data-uid="Core.HardWare.CCamera.GrabStart">GrabStart()</h4>
+  <div class="markdown level1 summary"><p>카메라의 GrabStart 메소드
+카메라의 Grab을 시작합니다.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void GrabStart()</code></pre>
+  </div>
+  
+  
+  <a id="Core_HardWare_CCamera_Initialize_" data-uid="Core.HardWare.CCamera.Initialize*"></a>
+  <h4 id="Core_HardWare_CCamera_Initialize_Core_HardWare_CCamera_System_String_System_String_" data-uid="Core.HardWare.CCamera.Initialize(Core.HardWare.CCamera,System.String,System.String)">Initialize(CCamera, String, String)</h4>
+  <div class="markdown level1 summary"><p>카메라 Initial 메소드</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract bool Initialize(CCamera _Camera, string _CamFile, string _sBoardType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Core.HardWare.CCamera.html">CCamera</a></td>
+        <td><span class="parametername">_Camera</span></td>
+        <td><p>CCamera의 객체</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">_CamFile</span></td>
+        <td><p>카메라의 CamFile</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">_sBoardType</span></td>
+        <td><p>사용하는 FrameGrabber Type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Core_HardWare_CCamera_IsConnected_" data-uid="Core.HardWare.CCamera.IsConnected*"></a>
+  <h4 id="Core_HardWare_CCamera_IsConnected" data-uid="Core.HardWare.CCamera.IsConnected">IsConnected()</h4>
+  <div class="markdown level1 summary"><p>카메라 연결 상태 체크 메소드</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract bool IsConnected()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Core_HardWare_CCamera_ResetIO_" data-uid="Core.HardWare.CCamera.ResetIO*"></a>
+  <h4 id="Core_HardWare_CCamera_ResetIO" data-uid="Core.HardWare.CCamera.ResetIO">ResetIO()</h4>
+  <div class="markdown level1 summary"><p>카메라의 ResetIO 메소드
+FrameGrabber에서 IO 신호를 출력 할 수 있는데, 이를 활용하여 조명 컨트롤러를 리셋 하는등의 동작 수행 가능</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void ResetIO()</code></pre>
+  </div>
+  
+  
+  <a id="Core_HardWare_CCamera_Uninitialize_" data-uid="Core.HardWare.CCamera.Uninitialize*"></a>
+  <h4 id="Core_HardWare_CCamera_Uninitialize" data-uid="Core.HardWare.CCamera.Uninitialize">Uninitialize()</h4>
+  <div class="markdown level1 summary"><p>카메라의 Uninitialize 메소드</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void Uninitialize()</code></pre>
+  </div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
